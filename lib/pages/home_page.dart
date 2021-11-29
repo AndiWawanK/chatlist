@@ -1,5 +1,6 @@
 import 'package:chatty/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:chatty/widgets/chat_tile.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,6 +26,7 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 40),
               Container(
                 width: double.infinity,
+                height: MediaQuery.of(context).size.height * 0.658,
                 padding: EdgeInsets.all(30),
                 decoration: BoxDecoration(
                     color: whiteColor,
@@ -34,21 +36,25 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text('Friends', style: titleTextStyle,),
-                    SizedBox(height: 16),
-                    Row(
-                      children: [
-                        Image.asset('assets/images/hackathon.png', width: 55, height: 55,),
-                        SizedBox(width: 16,),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('Andi Firwansyah', style: titleTextStyle),
-                            Text('Murtad dari React Native . . .', style: subtitleTextStyle,),
-                          ],
-                        ),
-                        Spacer(),
-                        Text('Now', style: subtitleTextStyle)
-                      ],
+                    ChatTile(
+                      avatar: 'assets/images/hackathon.png',
+                      name: 'Andi Firwansyah',
+                      lastMessage: 'Hei bro apakah kabs?',
+                      timestamp: '13:44 PM'
+                    ),
+                    ChatTile(
+                      avatar: 'assets/images/hackhotn2.png',
+                      name: 'Anonym',
+                      lastMessage: 'Hei bro',
+                      timestamp: '13:20 PM'
+                    ),
+                    SizedBox(height: 20,),
+                    Text('Groups', style: titleTextStyle),
+                    ChatTile(
+                      avatar: 'assets/images/avatar1.png',
+                      name: 'Gibah Kuy',
+                      lastMessage: 'Astaga si anu loh',
+                      timestamp: 'Now'
                     ),
                   ],
                 ),
