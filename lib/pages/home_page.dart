@@ -35,27 +35,29 @@ class HomePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Friends', style: titleTextStyle,),
-                    ChatTile(
-                      avatar: 'assets/images/hackathon.png',
-                      name: 'Andi Firwansyah',
-                      lastMessage: 'Hei bro apakah kabs?',
-                      timestamp: '13:44 PM'
+                    Text(
+                      'Friends',
+                      style: titleTextStyle,
                     ),
                     ChatTile(
-                      avatar: 'assets/images/hackhotn2.png',
-                      name: 'Anonym',
-                      lastMessage: 'Hei bro',
-                      timestamp: '13:20 PM'
+                        avatar: 'assets/images/hackathon.png',
+                        name: 'Andi Firwansyah',
+                        lastMessage: 'Hei bro apakah kabs?',
+                        timestamp: '13:44 PM'),
+                    ChatTile(
+                        avatar: 'assets/images/hackhotn2.png',
+                        name: 'Anonym',
+                        lastMessage: 'Hei bro',
+                        timestamp: '13:20 PM'),
+                    const SizedBox(
+                      height: 20,
                     ),
-                    const SizedBox(height: 20,),
                     Text('Groups', style: titleTextStyle),
                     ChatTile(
-                      avatar: 'assets/images/avatar1.png',
-                      name: 'Gibah Kuy',
-                      lastMessage: 'Astaga si anu loh',
-                      timestamp: 'Now'
-                    ),
+                        avatar: 'assets/images/avatar1.png',
+                        name: 'Gibah Kuy',
+                        lastMessage: 'Astaga si anu loh',
+                        timestamp: 'Now'),
                   ],
                 ),
               ),

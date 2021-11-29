@@ -29,9 +29,10 @@ class LoginPage extends StatelessWidget {
                   width: double.infinity,
                   decoration: BoxDecoration(
                       color: whiteColor,
-                      borderRadius:
-                          const BorderRadius.vertical(top: Radius.circular(25))),
-                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
+                      borderRadius: const BorderRadius.vertical(
+                          top: Radius.circular(25))),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
                   child: Column(
                     children: [
                       TextFormField(
@@ -64,7 +65,10 @@ class LoginPage extends StatelessWidget {
                           height: 48,
                           child: ElevatedButton(
                               onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => HomePage()));
                               },
                               style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
