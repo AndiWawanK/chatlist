@@ -6,6 +6,7 @@ Color lightBlueColor = Color(0xFF9ED0FF);
 Color blackColor = Color(0xFF2C3A59);
 Color greyColor = Color(0xFF808BA2);
 Color greenColor = Color(0xFF29CB9E);
+Color greyLight = Color(0xFFe3ecfa);
 
 TextStyle titleTextStyle = TextStyle(
   color: blackColor, 
@@ -16,4 +17,16 @@ TextStyle titleTextStyle = TextStyle(
 TextStyle subtitleTextStyle = TextStyle(
   color: greyColor,
   fontWeight: FontWeight.w300
+);
+
+TextStyle loginTitleStyle = TextStyle(
+  color: whiteColor,
+  fontWeight: FontWeight.w600,
+  fontSize: 25
+);
+
+TextStyle loginSubTitleStyle = TextStyle(
+  color: greyLight,
+  fontWeight: FontWeight.w400,
+  fontSize: 14
 );

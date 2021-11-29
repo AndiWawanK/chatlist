@@ -12,10 +12,10 @@ class HomePage extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              SizedBox(height: 60),
+              const SizedBox(height: 60),
               Image.asset('assets/images/profile_pic.png',
                   height: 100, width: 100),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text('Sabrina Carpenter',
                   style: TextStyle(fontSize: 20, color: whiteColor)),
               Text('Travel Freelancer',
@@ -23,15 +23,15 @@ class HomePage extends StatelessWidget {
                     color: lightBlueColor,
                     fontSize: 16,
                   )),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               Container(
                 width: double.infinity,
-                height: MediaQuery.of(context).size.height * 0.658,
-                padding: EdgeInsets.all(30),
+                height: MediaQuery.of(context).size.height * 0.675,
+                padding: const EdgeInsets.all(30),
                 decoration: BoxDecoration(
                     color: whiteColor,
                     borderRadius:
-                        BorderRadius.vertical(top: Radius.circular(40))),
+                        const BorderRadius.vertical(top: Radius.circular(40))),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
                       lastMessage: 'Hei bro',
                       timestamp: '13:20 PM'
                     ),
-                    SizedBox(height: 20,),
+                    const SizedBox(height: 20,),
                     Text('Groups', style: titleTextStyle),
                     ChatTile(
                       avatar: 'assets/images/avatar1.png',
